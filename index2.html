@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/logo.png" type="image/png" />
+		<link rel="stylesheet" href="regist.css" />
+		<title>Регистрация</title>
+	</head>
+	<body>
+		<header class="header">
+			<p class="aligncenter">
+				<img src="images/logo.png" alt="Logo" class="logo" />
+			</p>
+			<nav class="header-menu">
+				<ul class="menu-ul">
+					<li class="menu-li" id="reg">
+						<a href="index.html" class="menu-link" target="_blank">На главную</a>
+					</li>
+				</ul>
+				<div class="phone">
+					<img src="images/phone-icon.png" alt="Phone" class="phone-icon" />
+					<div class="phone-numbers">+7987654321</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<h1 class="title-h1">Регистрация нового пользователя</h1>
+				<div class="text">
+					Если вы уже зарегистрированы, перейдите на страницу
+					<a href="index3.html" class="text-link">входа</a>
+				</div>
+				<div class="feedback-columns">
+					<form action="validation/check.php" method="post">
+						<div class="feedback-left-column">
+								<div class="feedback-text">Контактные данные</div>
+								<input
+									type="text"
+									class="feedback__input"
+									name="login"
+									id="login"
+									placeholder="Логин"
+									required
+								/>
+								<input
+									type="text"
+									class="feedback__input"
+									name="name"
+									id="name"
+									placeholder="Имя"
+									required
+								/>
+								<input
+									type="password"
+									class="feedback__input"
+									name="pass"
+									id="pass"
+									placeholder="Пароль"
+									required
+								/>
+						</div>
+		
+							<div class="wrapper">
+							<button class="feedback-btn" type="submit" id="btn">
+								Зарегистрироваться
+							</button>
+						</div>	
+					</form>
+
+					<div class="feedback-right-column">
+						<div class="feedback-text">Данные для доставки</div>
+						<input type="email" class="feedback__input" placeholder="ФИО получателя" id="surname" required/>
+						<input type="text" class="feedback__input" id="city" placeholder="Город" required />
+						<input type="password" class="feedback__input" id="address" placeholder="Адрес" required />
+					</div>
+				</div>
+			</div>
+		</main>
+
+			<footer class="footer">
+				<img src="images/logo.png" alt="Logo" class="logo" />
+				<div class="social">
+					<a href="https://www.youtube.com/watch?v=ZBiLGopulzI" target="_blank">
+						<img src="images/yt.png" alt="YouTube" class="yt"/>
+					</a>
+					<a href="https://www.instagram.com/" target="_blank">
+						<img src="images/insta.png" alt="Instagram" class="inst"/>
+					</a>
+					<a href="https://vk.com/donerhouse74" target="_blank">
+						<img src="images/vk.png" alt="VK" class="vk">
+					</a>
+				</div>
+				<div class="phone">
+					<img src="images/phone-icon.png" alt="Phone" class="phone-icon" />
+					<div class="phone-numbers">+7987654321</div>
+				</div>
+			</footer>
+
+	</body>
+</html>

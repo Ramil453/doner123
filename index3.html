@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/logo.png" type="image/png" />
+		<link rel="stylesheet" href="entrance.css" />
+		<title>Вход</title>
+	</head>
+	<body>
+		<header class="header">
+			<p class="aligncenter">
+				<img src="images/logo.png" alt="Logo" class="logo" />
+			</p>
+			<nav class="header-menu">
+				<ul class="menu-ul">
+					<li class="menu-li" id="reg">
+						<a href="index.html" class="menu-link" target="_blank"
+							>На главную</a
+						>
+					</li>
+				</ul>
+				<div class="phone">
+					<img src="images/phone-icon.png" alt="Phone" class="phone-icon" />
+					<div class="phone-numbers">+7987654321</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<h1 class="title-h1">Вход пользователя</h1>
+				<div class="text">
+					Если вы еще не зарегистрированы, перейдите на страницу
+					<a href="index2.html" class="text-link">регистрации</a>
+				</div>
+				<div class="wrapper">
+					<form action="validation/auth.php" method="post" class="form">
+						<div class="feedback-column">
+								<div class="feedback-text">Вход</div>
+							<div class="feedback-input-title" id="email-title">Логин</div>
+							<input
+								type="text"
+								class="form__input"
+								name="login"
+								id="login"
+								required
+							/>
+
+							<div class="feedback-input-title">Пароль</div>
+							<input
+								type="password"
+								class="form__input"
+								name="pass"
+								id="pass"
+								required
+							/>
+						</div>
+						<div class="wrapper">
+							<button class="feedback-btn" type="submit">Войти</button>
+						</div>
+					</form>
+				</div>
+					
+				
+			</div>
+		</main>
+
+
+					<footer class="footer">
+				<img src="images/logo.png" alt="Logo" class="logo" />
+				<div class="social">
+					<a href="https://www.youtube.com/watch?v=ZBiLGopulzI" target="_blank">
+						<img src="images/yt.png" alt="YouTube" class="yt"/>
+					</a>
+					<a href="https://www.instagram.com/" target="_blank">
+						<img src="images/insta.png" alt="Instagram" class="inst"/>
+					</a>
+					<a href="https://vk.com/donerhouse74" target="_blank">
+						<img src="images/vk.png" alt="VK" class="vk">
+					</a>
+				</div>
+				<div class="phone">
+					<img src="images/phone-icon.png" alt="Phone" class="phone-icon" />
+					<div class="phone-numbers">+7987654321</div>
+				</div>
+			</footer>
+	</body>
+</html>
